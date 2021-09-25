@@ -1,0 +1,36 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    height: 100vh;
+}
+
+body{
+    height: 400vh;
+    background-color: black;
+}
+
+canvas{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    max-width: 100vw;
+    max-height: 100vh;
+}
+section{
+    background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.paperPlane img{
+    position: absolute;
+    height: 100px;
+    top: 50%;
+    left: 0;
+}
