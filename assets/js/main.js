@@ -33,40 +33,40 @@ window.addEventListener('scroll', () => {
     requestAnimationFrame( () => updateImage(frameIndex + 1))
 });
 
-const flightPath = {
-    curviness: 2.5,
-    autoRotate:true,
-    values:[
-        {x:200, y:-20},
-        {x:300,y:20},
-        {x:550,y:100},
-        {x:800,y:-100},
-        {x:1100,y:30},
-        {x:900,y:0},
-        {x:window.innerWidth,y:-250}
-    ]
-};
+// const flightPath = {
+//     curviness: 2.5,
+//     autoRotate:true,
+//     values:[
+//         {x:200, y:-20},
+//         {x:300,y:20},
+//         {x:550,y:100},
+//         {x:800,y:-100},
+//         {x:1100,y:30},
+//         {x:900,y:0},
+//         {x:window.innerWidth,y:-250}
+//     ]
+// };
 
-const tween = new TimelineLite();
+// const tween = new TimelineLite();
 
-tween.add(
-    TweenLite.to(".paper_plane", 1,{
-        bezier:flightPath,
-        ease: Power1.easeInOut
-    })
-);
+// tween.add(
+//     TweenLite.to(".paper_plane", 1,{
+//         bezier:flightPath,
+//         ease: Power1.easeInOut
+//     })
+// );
 
-const controll = new ScrollMagic.Controller();
+// const controll = new ScrollMagic.Controller();
 
-const scene = new ScrollMagic.Scene({
-    triggerElement:'section',
-    duration:1000,
-    triggerHook: 0
-})
+// const scene = new ScrollMagic.Scene({
+//     triggerElement:'section',
+//     duration:1000,
+//     triggerHook: 0
+// })
 
-.setTween(tween)
-.setPin('section')
-.addTo(controll);
+// .setTween(tween)
+// .setPin('section')
+// .addTo(controll);
 
 
 preloadImages()
